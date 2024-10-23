@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +14,18 @@
         <main>
             <form>
                 <h3>Logg inn</h3>
-                <label>
+                <label aria-label="E-post"> <!--Aria label er for skjermleser-->
                     <i class="fa-solid fa-envelope"></i>
                     <input type="email" placeholder="ackarlse@hiof...">
                 </label>
-                <label>
+                <label aria-label="Passord">
                     <i class="fa-solid fa-key"></i>
                     <input type="password" placeholder="*******">
                 </label>
                 <input type="submit" value="Logg inn">
+                <label aria-label="Søk">
+                    <input type="search" id="search">
+                </label>
             </form>
         </main>
     </div>
